@@ -1,0 +1,12 @@
+databases/
+logs/
+models/
+*.png
+test.py
+outputs/
+outputs/images
+nodes/
+
+__pycache__/
+*.pyc
+*.pyo
