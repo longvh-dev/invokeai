@@ -1,0 +1,1029 @@
+{
+    "common": {
+        "languagePickerLabel": "言語",
+        "reportBugLabel": "バグ報告",
+        "settingsLabel": "設定",
+        "upload": "アップロード",
+        "load": "ロード",
+        "back": "戻る",
+        "statusDisconnected": "切断済",
+        "cancel": "キャンセル",
+        "accept": "同意",
+        "img2img": "img2img",
+        "loading": "ロード中",
+        "githubLabel": "Github",
+        "hotkeysLabel": "ホットキー",
+        "discordLabel": "Discord",
+        "nodes": "ワークフロー",
+        "txt2img": "txt2img",
+        "postprocessing": "ポストプロセス",
+        "t2iAdapter": "T2I アダプター",
+        "communityLabel": "コミュニティ",
+        "dontAskMeAgain": "次回から確認しない",
+        "areYouSure": "本当によろしいですか？",
+        "on": "オン",
+        "ipAdapter": "IPアダプター",
+        "auto": "自動",
+        "openInNewTab": "新しいタブで開く",
+        "controlNet": "コントロールネット",
+        "linear": "リニア",
+        "imageFailedToLoad": "画像が読み込めません",
+        "modelManager": "モデルマネージャー",
+        "learnMore": "もっと学ぶ",
+        "random": "ランダム",
+        "batch": "バッチマネージャー",
+        "advanced": "高度",
+        "created": "作成済",
+        "green": "緑",
+        "blue": "青",
+        "alpha": "アルファ",
+        "outpaint": "outpaint",
+        "unknown": "不明",
+        "updated": "更新済",
+        "add": "追加",
+        "ai": "ai",
+        "copyError": "$t(gallery.copy) エラー",
+        "data": "データ",
+        "template": "テンプレート",
+        "red": "赤",
+        "or": "または",
+        "checkpoint": "Checkpoint",
+        "direction": "方向",
+        "simple": "シンプル",
+        "save": "保存",
+        "saveAs": "名前をつけて保存",
+        "somethingWentWrong": "何かの問題が発生しました",
+        "details": "詳細",
+        "inpaint": "inpaint",
+        "delete": "削除",
+        "nextPage": "次のページ",
+        "copy": "コピー",
+        "error": "エラー",
+        "file": "ファイル",
+        "folder": "フォルダ",
+        "input": "インプット",
+        "format": "形式",
+        "installed": "インストール済み",
+        "localSystem": "ローカルシステム",
+        "outputs": "アウトプット",
+        "prevPage": "前のページ",
+        "unknownError": "未知のエラー",
+        "orderBy": "並び順:",
+        "enabled": "有効",
+        "notInstalled": "未 $t(common.installed)",
+        "positivePrompt": "ポジティブプロンプト",
+        "negativePrompt": "ネガティブプロンプト",
+        "selected": "選択済み",
+        "aboutDesc": "Invokeを業務で利用する場合はマークしてください:",
+        "beta": "Beta",
+        "disabled": "無効",
+        "editor": "エディタ",
+        "safetensors": "Safetensors",
+        "tab": "タブ",
+        "toResolve": "解決方法",
+        "openInViewer": "ビューアで開く",
+        "placeholderSelectAModel": "モデルを選択",
+        "clipboard": "クリップボード",
+        "apply": "適用",
+        "loadingImage": "画像をロード中",
+        "off": "オフ",
+        "view": "ビュー",
+        "edit": "編集",
+        "ok": "OK",
+        "reset": "リセット",
+        "none": "なし",
+        "new": "新規",
+        "close": "閉じる",
+        "warnings": "警告",
+        "dontShowMeThese": "次回から表示しない",
+        "goTo": "移動",
+        "generating": "生成中",
+        "loadingModel": "モデルをロード中",
+        "layout": "レイアウト",
+        "step": "ステップ",
+        "start": "開始",
+        "count": "回数",
+        "end": "終了",
+        "min": "最小",
+        "max": "最大",
+        "values": "値",
+        "resetToDefaults": "デフォルトに戻す",
+        "row": "行",
+        "column": "列",
+        "board": "ボード",
+        "seed": "シード",
+        "combinatorial": "組み合わせ",
+        "aboutHeading": "想像力をこの手に"
+    },
+    "gallery": {
+        "galleryImageSize": "画像のサイズ",
+        "gallerySettings": "ギャラリーの設定",
+        "noImagesInGallery": "表示する画像がありません",
+        "autoSwitchNewImages": "新しい画像に自動切替",
+        "copy": "コピー",
+        "image": "画像",
+        "autoAssignBoardOnClick": "クリックしたボードに自動追加",
+        "featuresWillReset": "この画像を削除すると、これらの機能は即座にリセットされます。",
+        "unstarImage": "スターを外す",
+        "loading": "ロード中",
+        "currentlyInUse": "この画像は現在下記の機能を使用しています:",
+        "drop": "ドロップ",
+        "dropOrUpload": "$t(gallery.drop) またはアップロード",
+        "deleteImage_other": "画像 {{count}} 枚を削除",
+        "deleteImagePermanent": "削除された画像は復元できません。",
+        "download": "ダウンロード",
+        "unableToLoad": "ギャラリーをロードできません",
+        "bulkDownloadRequested": "ダウンロード準備中",
+        "bulkDownloadRequestedDesc": "ダウンロードの準備中です。しばらくお待ちください。",
+        "bulkDownloadRequestFailed": "ダウンロード準備中に問題が発生",
+        "bulkDownloadFailed": "ダウンロード失敗",
+        "alwaysShowImageSizeBadge": "画像サイズバッジを常に表示",
+        "dropToUpload": "$t(gallery.drop) してアップロード",
+        "noImageSelected": "画像が選択されていません",
+        "deleteSelection": "選択中のものを削除",
+        "downloadSelection": "選択中のものをダウンロード",
+        "starImage": "スターをつける",
+        "viewerImage": "閲覧画像",
+        "compareImage": "比較画像",
+        "openInViewer": "ビューアで開く",
+        "selectForCompare": "比較対象として選択",
+        "selectAnImageToCompare": "比較する画像を選択",
+        "slider": "スライダー",
+        "sideBySide": "横並び",
+        "hover": "ホバー",
+        "swapImages": "画像を入れ替える",
+        "stretchToFit": "画面に合わせる",
+        "exitCompare": "比較を終了する",
+        "compareHelp1": "<Kbd>Alt</Kbd> キーを押しながらギャラリー画像をクリックするか、矢印キーを使用して比較画像を変更します。",
+        "compareHelp3": "<Kbd>C</Kbd>を押して、比較した画像を入れ替えます。",
+        "compareHelp4": "<Kbd>[Z</Kbd>]または<Kbd>[Esc</Kbd>]を押して終了します。",
+        "compareHelp2": "<Kbd>M</Kbd> キーを押して比較モードを切り替えます。",
+        "move": "移動",
+        "openViewer": "ビューアを開く",
+        "closeViewer": "ビューアを閉じる",
+        "exitSearch": "画像検索を終了",
+        "oldestFirst": "最古から",
+        "showStarredImagesFirst": "スター付き画像を最初に",
+        "exitBoardSearch": "ボード検索を終了",
+        "showArchivedBoards": "アーカイブされたボードを表示",
+        "searchImages": "メタデータで検索",
+        "gallery": "ギャラリー",
+        "newestFirst": "最新から",
+        "jump": "ジャンプ",
+        "go": "進む",
+        "sortDirection": "並び替え順",
+        "displayBoardSearch": "ボード検索",
+        "displaySearch": "画像を検索",
+        "boardsSettings": "ボード設定",
+        "imagesSettings": "ギャラリー画像設定",
+        "selectAllOnPage": "ページ上のすべてを選択",
+        "images": "画像",
+        "assetsTab": "プロジェクトで使用するためにアップロードされたファイル。",
+        "imagesTab": "Invoke内で作成および保存された画像。",
+        "assets": "アセット"
+    },
+    "hotkeys": {
+        "searchHotkeys": "ホットキーを検索",
+        "clearSearch": "検索をクリア",
+        "noHotkeysFound": "ホットキーが見つかりません",
+        "viewer": {
+            "runPostprocessing": {
+                "title": "ポストプロセスを実行"
+            },
+            "useSize": {
+                "title": "サイズを使用"
+            },
+            "recallPrompts": {
+                "title": "プロンプトを再使用"
+            },
+            "recallAll": {
+                "title": "全てのメタデータを再使用"
+            },
+            "recallSeed": {
+                "title": "シード値を再使用"
+            }
+        },
+        "canvas": {
+            "redo": {
+                "title": "やり直し",
+                "desc": "最後のキャンバス操作をやり直します。"
+            },
+            "transformSelected": {
+                "title": "変形",
+                "desc": "選択したレイヤーを変形します。"
+            },
+            "undo": {
+                "title": "取り消し",
+                "desc": "最後のキャンバス操作を取り消します。"
+            },
+            "selectEraserTool": {
+                "title": "消しゴムツール",
+                "desc": "消しゴムツールを選択します。"
+            },
+            "cancelTransform": {
+                "title": "変形をキャンセル",
+                "desc": "保留中の変形をキャンセルします。"
+            },
+            "resetSelected": {
+                "title": "レイヤーをリセット",
+                "desc": "選択したレイヤーをリセットします。この操作はInpaint MaskおよびRegional Guidanceにのみ適用されます。"
+            },
+            "applyTransform": {
+                "title": "変形を適用",
+                "desc": "保留中の変形を選択したレイヤーに適用します。"
+            },
+            "selectColorPickerTool": {
+                "title": "スポイトツール",
+                "desc": "スポイトツールを選択します。"
+            },
+            "fitBboxToCanvas": {
+                "title": "バウンディングボックスをキャンバスにフィット",
+                "desc": "バウンディングボックスがキャンバスに収まるように表示を拡大、位置調整します。"
+            },
+            "selectBrushTool": {
+                "title": "ブラシツール",
+                "desc": "ブラシツールを選択します。"
+            },
+            "selectMoveTool": {
+                "title": "移動ツール",
+                "desc": "移動ツールを選択します。"
+            },
+            "selectBboxTool": {
+                "title": "バウンディングボックスツール",
+                "desc": "バウンディングボックスツールを選択します。"
+            },
+            "title": "キャンバス",
+            "fitLayersToCanvas": {
+                "title": "レイヤーをキャンバスにフィット",
+                "desc": "すべての表示レイヤーがキャンバスに収まるように表示を拡大、位置調整します。"
+            },
+            "setZoomTo400Percent": {
+                "desc": "キャンバスのズームを400%に設定します。",
+                "title": "400%にズーム"
+            },
+            "setZoomTo800Percent": {
+                "title": "800%にズーム",
+                "desc": "キャンバスのズームを800%に設定します。"
+            },
+            "quickSwitch": {
+                "title": "レイヤーのクイックスイッチ",
+                "desc": "最後に選択した2つのレイヤー間を切り替えます。レイヤーがブックマークされている場合、常にそのレイヤーと最後に選択したブックマークされていないレイヤーの間を切り替えます。"
+            },
+            "nextEntity": {
+                "title": "次のレイヤー",
+                "desc": "リスト内の次のレイヤーを選択します。"
+            },
+            "filterSelected": {
+                "title": "フィルター",
+                "desc": "選択したレイヤーをフィルターします。RasterおよびControlレイヤーにのみ適用されます。"
+            },
+            "prevEntity": {
+                "desc": "リスト内の前のレイヤーを選択します。",
+                "title": "前のレイヤー"
+            },
+            "setFillToWhite": {
+                "title": "ツール色を白に設定",
+                "desc": "現在のツールの色を白色に設定します。"
+            },
+            "selectViewTool": {
+                "title": "表示ツール",
+                "desc": "表示ツールを選択します。"
+            },
+            "setZoomTo100Percent": {
+                "title": "100%にズーム",
+                "desc": "キャンバスのズームを100%に設定します。"
+            },
+            "deleteSelected": {
+                "desc": "選択したレイヤーを削除します。",
+                "title": "レイヤーを削除"
+            },
+            "cancelFilter": {
+                "desc": "保留中のフィルターをキャンセルします。",
+                "title": "フィルターをキャンセル"
+            },
+            "applyFilter": {
+                "title": "フィルターを適用",
+                "desc": "保留中のフィルターを選択したレイヤーに適用します。"
+            },
+            "setZoomTo200Percent": {
+                "title": "200%にズーム",
+                "desc": "キャンバスのズームを200%に設定します。"
+            },
+            "decrementToolWidth": {
+                "title": "ツール幅を縮小する",
+                "desc": "選択中のブラシまたは消しゴムツールの幅を減少させます。"
+            },
+            "incrementToolWidth": {
+                "desc": "選択中のブラシまたは消しゴムツールの幅を増加させます。",
+                "title": "ツール幅を増加する"
+            },
+            "selectRectTool": {
+                "title": "矩形ツール",
+                "desc": "矩形ツールを選択します。"
+            }
+        },
+        "workflows": {
+            "undo": {
+                "title": "取り消し"
+            },
+            "redo": {
+                "title": "やり直し"
+            },
+            "title": "ワークフロー",
+            "pasteSelection": {
+                "title": "ペースト"
+            },
+            "copySelection": {
+                "title": "コピー"
+            }
+        },
+        "app": {
+            "toggleLeftPanel": {
+                "title": "左パネルをトグル",
+                "desc": "左パネルを表示または非表示。"
+            },
+            "title": "アプリケーション",
+            "invoke": {
+                "title": "生成",
+                "desc": "生成をキューに追加し、キューの末尾に加えます。"
+            },
+            "cancelQueueItem": {
+                "title": "キャンセル",
+                "desc": "現在処理中のキュー項目をキャンセルします。"
+            },
+            "clearQueue": {
+                "title": "キューをクリア",
+                "desc": "すべてのキュー項目をキャンセルして消去します。"
+            },
+            "selectCanvasTab": {
+                "desc": "キャンバスタブを選択します。",
+                "title": "キャンバスタブを選択"
+            },
+            "selectUpscalingTab": {
+                "desc": "アップスケーリングタブを選択します。",
+                "title": "アップスケーリングタブを選択"
+            },
+            "toggleRightPanel": {
+                "desc": "右パネルを表示または非表示。",
+                "title": "右パネルをトグル"
+            },
+            "selectModelsTab": {
+                "title": "モデルタブを選択",
+                "desc": "モデルタブを選択します。"
+            },
+            "invokeFront": {
+                "desc": "生成をキューに追加し、キューの先頭に加えます。",
+                "title": "生成（先頭）"
+            },
+            "resetPanelLayout": {
+                "title": "パネルレイアウトをリセット",
+                "desc": "左パネルと右パネルをデフォルトのサイズとレイアウトにリセットします。"
+            },
+            "togglePanels": {
+                "desc": "左パネルと右パネルを合わせて表示または非表示。",
+                "title": "パネルをトグル"
+            },
+            "selectWorkflowsTab": {
+                "desc": "ワークフロータブを選択します。",
+                "title": "ワークフロータブを選択"
+            },
+            "selectQueueTab": {
+                "title": "キュータブを選択",
+                "desc": "キュータブを選択します。"
+            },
+            "focusPrompt": {
+                "title": "プロンプトにフォーカス",
+                "desc": "カーソルをポジティブプロンプト欄に移動します。"
+            }
+        },
+        "hotkeys": "ホットキー",
+        "gallery": {
+            "title": "ギャラリー"
+        }
+    },
+    "modelManager": {
+        "modelManager": "モデルマネージャ",
+        "model": "モデル",
+        "allModels": "すべてのモデル",
+        "modelUpdated": "モデルをアップデート",
+        "manual": "手動",
+        "name": "名前",
+        "description": "概要",
+        "config": "コンフィグ",
+        "repo_id": "リポジトリID",
+        "width": "幅",
+        "height": "高さ",
+        "addModel": "モデルを追加",
+        "availableModels": "モデルを有効化",
+        "search": "検索",
+        "load": "ロード",
+        "active": "active",
+        "selected": "選択済",
+        "delete": "削除",
+        "deleteModel": "モデルを削除",
+        "deleteConfig": "設定を削除",
+        "deleteMsg1": "InvokeAIからこのモデルを削除してよろしいですか?",
+        "deleteMsg2": "これは、モデルがInvokeAIルートフォルダ内にある場合、ディスクからモデルを削除します。カスタム保存場所を使用している場合、モデルはディスクから削除されません。",
+        "none": "なし",
+        "convert": "変換",
+        "convertToDiffusersHelpText6": "このモデルを変換しますか？",
+        "settings": "設定",
+        "convertingModelBegin": "モデルを変換しています...",
+        "baseModel": "ベースモデル",
+        "modelDeleteFailed": "モデルの削除ができませんでした",
+        "convertToDiffusers": "ディフューザーに変換",
+        "alpha": "アルファ",
+        "modelConverted": "モデル変換が完了しました",
+        "predictionType": "予測タイプ（SD 2.x モデルおよび一部のSD 1.x モデル用）",
+        "selectModel": "モデルを選択",
+        "advanced": "高度",
+        "modelDeleted": "モデルが削除されました",
+        "convertToDiffusersHelpText2": "このプロセスでは、モデルマネージャーのエントリーを同じモデルのディフューザーバージョンに置き換えます。",
+        "modelUpdateFailed": "モデル更新が失敗しました",
+        "convertToDiffusersHelpText5": "十分なディスク空き容量があることを確認してください。モデルは一般的に2GBから7GBのサイズがあります。",
+        "modelConversionFailed": "モデル変換が失敗しました",
+        "syncModels": "モデルを同期",
+        "modelType": "モデルタイプ",
+        "convertToDiffusersHelpText1": "このモデルは 🧨 Diffusers フォーマットに変換されます。",
+        "convertToDiffusersHelpText3": "チェックポイントファイルは、InvokeAIルートフォルダ内にある場合、ディスクから削除されます。カスタムロケーションにある場合は、削除されません。",
+        "convertToDiffusersHelpText4": "これは一回限りのプロセスです。コンピュータの仕様によっては、約30秒から60秒かかる可能性があります。",
+        "cancel": "キャンセル",
+        "uploadImage": "画像をアップロード",
+        "addModels": "モデルを追加",
+        "modelName": "モデル名",
+        "source": "ソース",
+        "path": "パス",
+        "modelSettings": "モデル設定",
+        "vae": "VAE",
+        "huggingFace": "HuggingFace",
+        "huggingFaceRepoID": "HuggingFace リポジトリID",
+        "metadata": "メタデータ",
+        "loraModels": "LoRA",
+        "edit": "編集",
+        "install": "インストール",
+        "huggingFacePlaceholder": "owner/model-name",
+        "variant": "Variant"
+    },
+    "parameters": {
+        "images": "画像",
+        "steps": "ステップ数",
+        "width": "幅",
+        "height": "高さ",
+        "seed": "シード値",
+        "shuffle": "シャッフル",
+        "strength": "強度",
+        "upscaling": "アップスケーリング",
+        "scale": "スケール",
+        "scaleBeforeProcessing": "処理前のスケール",
+        "scaledWidth": "幅のスケール",
+        "scaledHeight": "高さのスケール",
+        "downloadImage": "画像をダウンロード",
+        "usePrompt": "プロンプトを使用",
+        "useSeed": "シード値を使用",
+        "useAll": "すべてを使用",
+        "info": "情報",
+        "showOptionsPanel": "サイドパネルを表示 (O or T)",
+        "iterations": "生成回数",
+        "general": "基本設定",
+        "setToOptimalSize": "サイズをモデルに最適化",
+        "invoke": {
+            "addingImagesTo": "画像の追加先"
+        },
+        "aspect": "縦横比",
+        "lockAspectRatio": "縦横比を固定",
+        "scheduler": "スケジューラー",
+        "sendToUpscale": "アップスケーラーに転送",
+        "useSize": "サイズを使用",
+        "postProcessing": "ポストプロセス (Shift + U)",
+        "denoisingStrength": "ノイズ除去強度",
+        "recallMetadata": "メタデータを再使用",
+        "copyImage": "画像をコピー",
+        "positivePromptPlaceholder": "ポジティブプロンプト",
+        "negativePromptPlaceholder": "ネガティブプロンプト",
+        "type": "タイプ",
+        "cancel": {
+            "cancel": "キャンセル"
+        },
+        "cfgScale": "CFGスケール",
+        "tileSize": "タイルサイズ",
+        "coherenceMode": "モード"
+    },
+    "settings": {
+        "models": "モデル",
+        "displayInProgress": "生成中の画像を表示",
+        "confirmOnDelete": "削除時に確認",
+        "resetWebUI": "WebUIをリセット",
+        "resetWebUIDesc1": "WebUIのリセットは、画像と保存された設定のキャッシュをリセットするだけです。画像を削除するわけではありません。",
+        "resetWebUIDesc2": "もしギャラリーに画像が表示されないなど、何か問題が発生した場合はGitHubにissueを提出する前にリセットを試してください。",
+        "resetComplete": "WebUIはリセットされました。",
+        "ui": "ユーザーインターフェイス",
+        "beta": "ベータ",
+        "developer": "開発者"
+    },
+    "toast": {
+        "uploadFailed": "アップロード失敗",
+        "imageCopied": "画像をコピー",
+        "imageUploadFailed": "画像のアップロードに失敗しました",
+        "uploadFailedInvalidUploadDesc": "画像はPNGかJPGである必要があります。",
+        "sentToUpscale": "アップスケーラーに転送しました",
+        "imageUploaded": "画像をアップロードしました",
+        "serverError": "サーバーエラー"
+    },
+    "accessibility": {
+        "invokeProgressBar": "進捗バー",
+        "reset": "リセット",
+        "uploadImage": "画像をアップロード",
+        "previousImage": "前の画像",
+        "nextImage": "次の画像",
+        "menu": "メニュー",
+        "createIssue": "問題を報告",
+        "resetUI": "$t(accessibility.reset) UI",
+        "mode": "モード",
+        "about": "Invoke について",
+        "submitSupportTicket": "サポート依頼を送信する",
+        "uploadImages": "画像をアップロード",
+        "toggleLeftPanel": "左パネルをトグル (T)",
+        "toggleRightPanel": "右パネルをトグル (G)"
+    },
+    "metadata": {
+        "Threshold": "ノイズ閾値",
+        "seed": "シード",
+        "width": "幅",
+        "workflow": "ワークフロー",
+        "steps": "ステップ",
+        "scheduler": "スケジューラー",
+        "positivePrompt": "ポジティブプロンプト",
+        "strength": "Image to Image 強度",
+        "recallParameters": "パラメータを再使用",
+        "recallParameter": "{{label}} を再使用",
+        "imageDimensions": "画像サイズ",
+        "imageDetails": "画像の詳細",
+        "model": "モデル",
+        "allPrompts": "すべてのプロンプト",
+        "cfgScale": "CFGスケール",
+        "createdBy": "作成:",
+        "metadata": "メタデータ",
+        "height": "高さ",
+        "negativePrompt": "ネガティブプロンプト",
+        "generationMode": "生成モード",
+        "vae": "VAE",
+        "cfgRescaleMultiplier": "$t(parameters.cfgRescaleMultiplier)",
+        "canvasV2Metadata": "キャンバス"
+    },
+    "queue": {
+        "queueEmpty": "キューが空です",
+        "pauseSucceeded": "処理が一時停止されました",
+        "queueFront": "キューの先頭へ追加",
+        "queueBack": "キューに追加",
+        "pause": "一時停止",
+        "queue": "キュー",
+        "pauseTooltip": "処理を一時停止",
+        "cancel": "キャンセル",
+        "resumeSucceeded": "処理が再開されました",
+        "resumeTooltip": "処理を再開",
+        "resume": "再開",
+        "status": "ステータス",
+        "pruneSucceeded": "キューから完了アイテム{{item_count}}件を削除しました",
+        "cancelTooltip": "現在のアイテムをキャンセル",
+        "in_progress": "進行中",
+        "notReady": "キューに追加できません",
+        "batchFailedToQueue": "バッチをキューに追加できませんでした",
+        "completed": "完了",
+        "cancelFailed": "アイテムのキャンセルに問題があります",
+        "batchQueued": "バッチをキューに追加しました",
+        "pauseFailed": "処理の一時停止に問題があります",
+        "clearFailed": "キューのクリアに問題があります",
+        "front": "先頭",
+        "clearSucceeded": "キューがクリアされました",
+        "pruneTooltip": "{{item_count}} の完了アイテムを削除",
+        "cancelSucceeded": "アイテムがキャンセルされました",
+        "batchQueuedDesc_other": "{{count}} セッションをキューの{{direction}}に追加しました",
+        "graphQueued": "グラフをキューに追加しました",
+        "batch": "バッチ",
+        "clearQueueAlertDialog": "キューをクリアすると、処理中の項目は直ちにキャンセルされ、キューは完全にクリアされます。保留中のフィルターもキャンセルされます。",
+        "pending": "保留中",
+        "resumeFailed": "処理の再開に問題があります",
+        "clear": "クリア",
+        "total": "合計",
+        "canceled": "キャンセル",
+        "pruneFailed": "キューの削除に問題があります",
+        "cancelBatchSucceeded": "バッチがキャンセルされました",
+        "clearTooltip": "全てのアイテムをキャンセルしてクリア",
+        "current": "現在",
+        "failed": "失敗",
+        "cancelItem": "項目をキャンセル",
+        "next": "次",
+        "cancelBatch": "バッチをキャンセル",
+        "session": "セッション",
+        "enqueueing": "バッチをキューに追加",
+        "cancelBatchFailed": "バッチのキャンセルに問題があります",
+        "clearQueueAlertDialog2": "キューをクリアしてもよろしいですか？",
+        "item": "項目",
+        "graphFailedToQueue": "グラフをキューに追加できませんでした",
+        "batchFieldValues": "バッチの詳細",
+        "openQueue": "キューを開く",
+        "time": "時間",
+        "completedIn": "完了まで",
+        "back": "戻る",
+        "prune": "刈り込み",
+        "prompts_other": "プロンプト",
+        "iterations_other": "繰り返し",
+        "generations_other": "生成",
+        "canvas": "キャンバス",
+        "workflows": "ワークフロー",
+        "upscaling": "アップスケール",
+        "generation": "生成",
+        "other": "その他",
+        "gallery": "ギャラリー",
+        "cancelAllExceptCurrentQueueItemAlertDialog2": "すべての保留中のキュー項目をキャンセルしてもよいですか？",
+        "cancelAllExceptCurrentTooltip": "現在の項目を除いてすべてキャンセル",
+        "origin": "先頭",
+        "destination": "宛先",
+        "confirm": "確認",
+        "retryItem": "項目をリトライ",
+        "batchSize": "バッチサイズ",
+        "retryFailed": "項目のリトライに問題があります",
+        "cancelAllExceptCurrentQueueItemAlertDialog": "現在の項目を除くすべてのキュー項目をキャンセルすると、保留中の項目は停止しますが、進行中の項目は完了します。",
+        "retrySucceeded": "項目がリトライされました"
+    },
+    "models": {
+        "noMatchingModels": "一致するモデルがありません",
+        "loading": "読み込み中",
+        "noMatchingLoRAs": "一致するLoRAがありません",
+        "noModelsAvailable": "使用可能なモデルがありません",
+        "selectModel": "モデルを選択してください",
+        "concepts": "コンセプト",
+        "addLora": "LoRAを追加",
+        "lora": "LoRA"
+    },
+    "nodes": {
+        "addNode": "ノードを追加",
+        "boolean": "ブーリアン",
+        "addNodeToolTip": "ノードを追加 (Shift+A, Space)",
+        "missingTemplate": "Invalid node: タイプ {{type}} のノード {{node}} にテンプレートがありません（未インストール？）",
+        "loadWorkflow": "ワークフローを読み込み",
+        "hideLegendNodes": "フィールドタイプの凡例を非表示",
+        "float": "浮動小数点",
+        "integer": "整数",
+        "nodeTemplate": "ノードテンプレート",
+        "inputMayOnlyHaveOneConnection": "入力は1つの接続しか持つことができません",
+        "nodeOutputs": "ノード出力",
+        "currentImageDescription": "ノードエディタ内の現在の画像を表示",
+        "downloadWorkflow": "ワークフローのJSONをダウンロード",
+        "fieldTypesMustMatch": "フィールドタイプが一致している必要があります",
+        "edge": "エッジ",
+        "animatedEdgesHelp": "選択したエッジおよび選択したノードに接続されたエッジをアニメーション化します",
+        "cannotDuplicateConnection": "重複した接続は作れません",
+        "noWorkflow": "ワークフローがありません",
+        "fullyContainNodesHelp": "ノードは選択ボックス内に完全に存在する必要があります",
+        "nodeType": "ノードタイプ",
+        "executionStateInProgress": "処理中",
+        "executionStateError": "エラー",
+        "hideMinimapnodes": "ミニマップを非表示",
+        "fitViewportNodes": "全体を表示",
+        "executionStateCompleted": "完了",
+        "node": "ノード",
+        "currentImage": "現在の画像",
+        "collection": "コレクション",
+        "cannotConnectInputToInput": "入力から入力には接続できません",
+        "cannotConnectOutputToOutput": "出力から出力には接続できません",
+        "cannotConnectToSelf": "自身のノードには接続できません",
+        "colorCodeEdges": "カラー-Code Edges",
+        "loadingNodes": "ノードを読み込み中...",
+        "scheduler": "スケジューラー",
+        "version": "バージョン",
+        "edit": "編集",
+        "nodeVersion": "ノードバージョン",
+        "workflowTags": "タグ",
+        "string": "文字列",
+        "workflowVersion": "バージョン",
+        "workflowAuthor": "作者",
+        "ipAdapter": "IP-Adapter",
+        "notes": "ノート",
+        "workflow": "ワークフロー",
+        "workflowName": "名前",
+        "workflowNotes": "ノート",
+        "enum": "Enum"
+    },
+    "boards": {
+        "autoAddBoard": "自動追加するボード",
+        "move": "移動",
+        "menuItemAutoAdd": "このボードに自動追加",
+        "myBoard": "マイボード",
+        "searchBoard": "ボードを検索...",
+        "noMatching": "一致するボードがありません",
+        "selectBoard": "ボードを選択",
+        "cancel": "キャンセル",
+        "addBoard": "ボードを追加",
+        "uncategorized": "未分類",
+        "downloadBoard": "ボードをダウンロード",
+        "changeBoard": "ボードを変更",
+        "loading": "ロード中...",
+        "topMessage": "このボードには、以下の機能で使用されている画像が含まれています：",
+        "bottomMessage": "このボードおよび画像を削除すると、現在これらを利用している機能はリセットされます。",
+        "clearSearch": "検索をクリア",
+        "deleteBoard": "ボードの削除",
+        "deleteBoardAndImages": "ボードと画像の削除",
+        "deleteBoardOnly": "ボードのみ削除",
+        "deletedBoardsCannotbeRestored": "削除されたボードは復元できません。\"ボードのみ削除\"を選択すると画像は未分類に移動されます。",
+        "movingImagesToBoard_other": "{{count}} の画像をボードに移動:",
+        "hideBoards": "ボードを隠す",
+        "assetsWithCount_other": "{{count}} のアセット",
+        "addPrivateBoard": "プライベートボードを追加",
+        "addSharedBoard": "共有ボードを追加",
+        "boards": "ボード",
+        "private": "プライベートボード",
+        "shared": "共有ボード",
+        "archiveBoard": "ボードをアーカイブ",
+        "archived": "アーカイブ完了",
+        "unarchiveBoard": "アーカイブされていないボード",
+        "imagesWithCount_other": "{{count}} の画像",
+        "updateBoardError": "ボード更新エラー",
+        "selectedForAutoAdd": "自動追加に選択済み",
+        "deletedPrivateBoardsCannotbeRestored": "削除されたボードは復元できません。\"ボードのみ削除\"を選択すると画像はその作成者のプライベートな未分類に移動されます。",
+        "noBoards": "{{boardType}} ボードがありません",
+        "viewBoards": "ボードを表示"
+    },
+    "invocationCache": {
+        "invocationCache": "呼び出しキャッシュ",
+        "clearSucceeded": "呼び出しキャッシュをクリアしました",
+        "clearFailed": "呼び出しキャッシュのクリアに問題があります",
+        "enable": "有効",
+        "clear": "クリア",
+        "maxCacheSize": "最大キャッシュサイズ",
+        "cacheSize": "キャッシュサイズ",
+        "useCache": "キャッシュを使用",
+        "misses": "見つからないキャッシュ",
+        "hits": "見つかったキャッシュ",
+        "disableSucceeded": "呼び出しキャッシュが無効",
+        "disableFailed": "呼び出しキャッシュの無効化中に問題が発生",
+        "enableSucceeded": "呼び出しキャッシュが有効",
+        "disable": "無効",
+        "enableFailed": "呼び出しキャッシュの有効化中に問題が発生"
+    },
+    "popovers": {
+        "paramRatio": {
+            "heading": "縦横比",
+            "paragraphs": [
+                "生成された画像の縦横比。"
+            ]
+        },
+        "regionalGuidanceAndReferenceImage": {
+            "heading": "領域ガイダンスと領域参照画像"
+        },
+        "regionalReferenceImage": {
+            "heading": "領域参照画像"
+        },
+        "paramScheduler": {
+            "heading": "スケジューラー"
+        },
+        "regionalGuidance": {
+            "heading": "領域ガイダンス"
+        },
+        "rasterLayer": {
+            "heading": "ラスターレイヤー"
+        },
+        "globalReferenceImage": {
+            "heading": "全域参照画像"
+        },
+        "paramUpscaleMethod": {
+            "heading": "アップスケール手法"
+        },
+        "upscaleModel": {
+            "heading": "アップスケールモデル"
+        },
+        "paramAspect": {
+            "heading": "縦横比"
+        },
+        "refinerSteps": {
+            "heading": "ステップ"
+        },
+        "paramVAE": {
+            "heading": "VAE"
+        },
+        "scale": {
+            "heading": "スケール"
+        },
+        "refinerScheduler": {
+            "heading": "スケジューラー"
+        },
+        "compositingCoherenceMode": {
+            "heading": "モード"
+        },
+        "paramModel": {
+            "heading": "モデル"
+        },
+        "paramHeight": {
+            "heading": "高さ"
+        },
+        "paramSteps": {
+            "heading": "ステップ"
+        },
+        "ipAdapterMethod": {
+            "heading": "モード"
+        },
+        "paramSeed": {
+            "heading": "シード"
+        },
+        "paramIterations": {
+            "heading": "生成回数"
+        },
+        "controlNet": {
+            "heading": "ControlNet"
+        },
+        "paramWidth": {
+            "heading": "幅"
+        },
+        "lora": {
+            "heading": "LoRA"
+        },
+        "loraWeight": {
+            "heading": "重み"
+        },
+        "patchmatchDownScaleSize": {
+            "heading": "Downscale"
+        },
+        "controlNetWeight": {
+            "heading": "重み"
+        }
+    },
+    "accordions": {
+        "compositing": {
+            "infillTab": "インフィル",
+            "title": "コンポジション",
+            "coherenceTab": "コヒーレンスパス"
+        },
+        "advanced": {
+            "title": "高度",
+            "options": "$t(accordions.advanced.title) オプション"
+        },
+        "control": {
+            "title": "コントロール"
+        },
+        "generation": {
+            "title": "生成"
+        },
+        "image": {
+            "title": "画像"
+        }
+    },
+    "hrf": {
+        "metadata": {
+            "method": "高解像修復の手法",
+            "strength": "高解像修復の強度",
+            "enabled": "高解像修復が有効"
+        },
+        "enableHrf": "高解像修復を有効",
+        "hrf": "高解像修復",
+        "upscaleMethod": "アップスケール手法"
+    },
+    "prompt": {
+        "addPromptTrigger": "プロンプトトリガーを追加",
+        "compatibleEmbeddings": "互換性のある埋め込み",
+        "noMatchingTriggers": "一致するトリガーがありません"
+    },
+    "ui": {
+        "tabs": {
+            "queue": "キュー",
+            "canvas": "キャンバス",
+            "workflows": "ワークフロー",
+            "models": "モデル",
+            "gallery": "ギャラリー"
+        }
+    },
+    "controlLayers": {
+        "globalReferenceImage_withCount_other": "全域参照画像",
+        "regionalReferenceImage": "領域参照画像",
+        "saveLayerToAssets": "レイヤーをアセットに保存",
+        "global": "全域",
+        "inpaintMasks_withCount_hidden": "インペイントマスク ({{count}} hidden)",
+        "opacity": "透明度",
+        "canvasContextMenu": {
+            "newRegionalGuidance": "新規領域ガイダンス",
+            "bboxGroup": "バウンディングボックスから作成",
+            "cropCanvasToBbox": "キャンバスをバウンディングボックスでクロップ",
+            "newGlobalReferenceImage": "新規全域参照画像",
+            "newRegionalReferenceImage": "新規領域参照画像",
+            "canvasGroup": "キャンバス"
+        },
+        "regionalGuidance": "領域ガイダンス",
+        "globalReferenceImage": "全域参照画像",
+        "moveForward": "前面へ移動",
+        "copyInpaintMaskTo": "$t(controlLayers.inpaintMask) をコピー",
+        "transform": {
+            "fitToBbox": "バウンディングボックスにフィット",
+            "transform": "変形",
+            "apply": "適用",
+            "cancel": "キャンセル",
+            "reset": "リセット"
+        },
+        "cropLayerToBbox": "レイヤーをバウンディングボックスでクロップ",
+        "convertInpaintMaskTo": "$t(controlLayers.inpaintMask)を変換",
+        "regionalGuidance_withCount_other": "領域ガイダンス",
+        "tool": {
+            "colorPicker": "スポイト",
+            "brush": "ブラシ",
+            "rectangle": "矩形",
+            "move": "移動",
+            "eraser": "消しゴム",
+            "bbox": "Bbox"
+        },
+        "saveCanvasToGallery": "キャンバスをギャラリーに保存",
+        "saveBboxToGallery": "バウンディングボックスをギャラリーへ保存",
+        "moveToBack": "最背面へ移動",
+        "duplicate": "複製",
+        "addLayer": "レイヤーを追加",
+        "rasterLayer": "ラスターレイヤー",
+        "inpaintMasks_withCount_visible": "({{count}}) インペイントマスク",
+        "regional": "領域",
+        "rectangle": "矩形",
+        "moveBackward": "背面へ移動",
+        "moveToFront": "最前面へ移動",
+        "mergeDown": "レイヤーを統合",
+        "inpaintMask_withCount_other": "インペイントマスク",
+        "canvas": "キャンバス",
+        "fitBboxToLayers": "バウンディングボックスをレイヤーにフィット",
+        "removeBookmark": "ブックマークを外す",
+        "savedToGalleryOk": "ギャラリーに保存しました",
+        "controlMode": {
+            "prompt": "プロンプト"
+        },
+        "prompt": "プロンプト",
+        "settings": {
+            "snapToGrid": {
+                "off": "オフ",
+                "on": "オン"
+            }
+        },
+        "filter": {
+            "filter": "フィルター",
+            "spandrel_filter": {
+                "model": "モデル"
+            },
+            "apply": "適用",
+            "reset": "リセット",
+            "cancel": "キャンセル"
+        },
+        "weight": "重み"
+    },
+    "stylePresets": {
+        "clearTemplateSelection": "選択したテンプレートをクリア",
+        "choosePromptTemplate": "プロンプトテンプレートを選択",
+        "myTemplates": "自分のテンプレート",
+        "flatten": "選択中のテンプレートをプロンプトに展開",
+        "uploadImage": "画像をアップロード",
+        "defaultTemplates": "デフォルトテンプレート",
+        "createPromptTemplate": "プロンプトテンプレートを作成",
+        "promptTemplateCleared": "プロンプトテンプレートをクリアしました",
+        "searchByName": "名前で検索",
+        "toggleViewMode": "表示モードを切り替え",
+        "negativePromptColumn": "'negative_prompt'",
+        "preview": "プレビュー",
+        "nameColumn": "'name'",
+        "type": "タイプ",
+        "private": "プライベート",
+        "name": "名称"
+    },
+    "upscaling": {
+        "upscaleModel": "アップスケールモデル",
+        "postProcessingModel": "ポストプロセスモデル",
+        "upscale": "アップスケール",
+        "scale": "スケール"
+    },
+    "sdxl": {
+        "denoisingStrength": "ノイズ除去強度",
+        "scheduler": "スケジューラー",
+        "loading": "ロード中...",
+        "steps": "ステップ",
+        "refiner": "Refiner"
+    },
+    "modelCache": {
+        "clear": "モデルキャッシュを消去",
+        "clearSucceeded": "モデルキャッシュを消去しました",
+        "clearFailed": "モデルキャッシュの消去中に問題が発生"
+    },
+    "workflows": {
+        "workflows": "ワークフロー",
+        "ascending": "昇順",
+        "name": "名前",
+        "descending": "降順"
+    },
+    "system": {
+        "logNamespaces": {
+            "system": "システム",
+            "gallery": "ギャラリー",
+            "workflows": "ワークフロー",
+            "models": "モデル",
+            "canvas": "キャンバス",
+            "metadata": "メタデータ",
+            "queue": "キュー"
+        },
+        "logLevel": {
+            "debug": "Debug",
+            "info": "Info",
+            "error": "Error",
+            "fatal": "Fatal",
+            "warn": "Warn"
+        }
+    }
+}
