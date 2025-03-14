@@ -307,6 +307,7 @@ class CustomFluxPipeline(DiffusionPipeline, FluxLoraLoaderMixin, FluxIPAdapterMi
         prompt: Union[str, List[str]],
         num_images_per_prompt: int = 1,
         device: Optional[torch.device] = None,
+        lora_scale: Optional[float] = None,
     ):
         device = device or self._execution_device
 
@@ -340,19 +341,19 @@ class CustomFluxPipeline(DiffusionPipeline, FluxLoraLoaderMixin, FluxIPAdapterMi
                 "The following part of your input was truncated because CLIP can only handle sequences up to"
                 f" {self.tokenizer_max_length} tokens: {removed_text}"
             )
-        prompt_embeds = self.text_encoder(
-            text_input_ids.to(device), output_hidden_states=False
-        )
 
-        # Use pooled output of CLIPTextModel
-        prompt_embeds = prompt_embeds.pooler_output
-        prompt_embeds = prompt_embeds.to(dtype=self.text_encoder.dtype, device=device)
+        if lora_scale is not None and hasattr(self.text_encoder, "set_adapters_scale"):
+            self.text_encoder.set_adapters_scale(lora_scale)
+
+        # Get pooled text embeddings (for CLIP)
+        pooled_prompt_embeds = self.text_encoder(
+            text_input_ids.to(device), output_hidden_states=True
+        )[0]
 
         # duplicate text embeddings for each generation per prompt, using mps friendly method
-        prompt_embeds = prompt_embeds.repeat(1, num_images_per_prompt)
-        prompt_embeds = prompt_embeds.view(batch_size * num_images_per_prompt, -1)
+        pooled_prompt_embeds = pooled_prompt_embeds.repeat(num_images_per_prompt, 1)
 
-        return prompt_embeds
+        return pooled_prompt_embeds, text_input_ids
 
     def encode_prompt(
         self,
