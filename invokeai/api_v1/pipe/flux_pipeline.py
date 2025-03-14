@@ -251,6 +251,7 @@ class CustomFluxPipeline(DiffusionPipeline, FluxLoraLoaderMixin, FluxIPAdapterMi
         max_sequence_length: int = 512,
         device: Optional[torch.device] = None,
         dtype: Optional[torch.dtype] = None,
+        lora_scale: Optional[float] = None,
     ):
         device = device or self._execution_device
         dtype = dtype or self.text_encoder.dtype
@@ -286,12 +287,15 @@ class CustomFluxPipeline(DiffusionPipeline, FluxLoraLoaderMixin, FluxIPAdapterMi
                 f" {max_sequence_length} tokens: {removed_text}"
             )
 
+        if lora_scale is not None and hasattr(
+            self.text_encoder_2, "set_adapters_scale"
+        ):
+            self.text_encoder_2.set_adapters_scale(lora_scale)
+
         prompt_embeds = self.text_encoder_2(
             text_input_ids.to(device), output_hidden_states=False
         )[0]
 
-        dtype = self.text_encoder_2.dtype
-        prompt_embeds = prompt_embeds.to(dtype=dtype, device=device)
         _, seq_len, _ = prompt_embeds.shape
 
         # duplicate text embeddings and attention mask for each generation per prompt, using mps friendly method
