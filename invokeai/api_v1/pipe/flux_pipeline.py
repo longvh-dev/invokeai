@@ -1008,37 +1008,48 @@ class CustomFluxPipeline(DiffusionPipeline, FluxLoraLoaderMixin, FluxIPAdapterMi
         return self._interrupt
 
     @torch.no_grad()
-    def enhanced_vae_encode(self, image, generator=None, device=None, dtype=None):
-        """Enhanced VAE encoding with advanced memory management"""
-        device = device or self._execution_device
-        dtype = dtype or self.vae.dtype
+    def _enhanced_vae_encode(
+        self,
+        image: PipelineImageInput,
+        sample: bool = True,
+        generator=None,
+    ) -> torch.Tensor:
+        r"""
+        Enhanced VAE encoding that uses the built-in AutoEncoder capabilities.
+
+        Args:
+            image: PIL Image or tensor to encode
+            generator: Optional random generator for sampling
+            sample: Whether to sample from the distribution or use the mean
+
+        Returns:
+            torch.Tensor: Encoded latents
+        """
+        device = self._execution_device
+        dtype = self.vae.dtype
 
         # Set consistent seed for reproducibility if no generator is provided
         if generator is None:
             generator = torch.Generator(device=device).manual_seed(0)
 
-        if isinstance(generator, list):
-            # Handle batch encoding with multiple generators
-            image_latents = []
-            for i in range(image.shape[0]):
-                # Move each image individually to control memory usage
-                img_slice = image[i : i + 1].to(device=device, dtype=dtype)
-                latent = retrieve_latents(
-                    self.vae.encode(img_slice), generator=generator[i]
-                )
-                image_latents.append(latent.cpu() if len(generator) > 1 else latent)
-            image_latents = torch.cat(image_latents, dim=0).to(device)
-        else:
-            # Move image to appropriate device and dtype
-            image = image.to(device=device, dtype=dtype)
-            image_latents = retrieve_latents(
-                self.vae.encode(image), generator=generator
+        if isinstance(image, PIL.Image.Image):
+            image = self.image_processor.preprocess(image)
+
+        # Move image to appropriate device and dtype
+        if image.dim() == 3:
+            image = image.unsqueeze(0)
+        image = image.to(device=device, dtype=dtype)
+        # Use the built-in encode method from AutoEncoder
+        # This already handles the scaling and distribution sampling
+        image_latents = self.vae.encode(image, sample=sample, generator=generator)
+
+        batch_size, num_channels, height, width = image_latents.shape
+
+        if hasattr(self, "_pack_latents"):
+            image_latents = self._pack_latents(
+                image_latents, batch_size, num_channels, height, width
             )
 
-        # Apply scaling factors
-        image_latents = (
-            image_latents - self.vae.config.shift_factor
-        ) * self.vae.config.scale_factor
         return image_latents
 
     @torch.no_grad()
